@@ -72,7 +72,8 @@ func SetupColors() {
 	//
 
 	DarkModePalette = gowid.Palette{
-		"default":                   gowid.MakePaletteEntry(dfg("default"), dbg("default")),
+		"default":                   gowid.MakePaletteEntry(dfg("default"), gowid.ColorNone),
+		"menu":                      gowid.MakePaletteEntry(dfg("menu"), dbg("menu")),
 		"title":                     gowid.MakeForeground(dfg("title")),
 		"current-capture":           gowid.MakeForeground(dfg("current-capture")),
 		"packet-list-row-focus":     gowid.MakePaletteEntry(dfg("packet-list-row-focus"), dbg("packet-list-row-focus")),

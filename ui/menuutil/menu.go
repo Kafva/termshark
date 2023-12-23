@@ -187,7 +187,7 @@ func makeMenuWithHotKeys(items []SimpleMenuItem, showKeys bool, sites SiteMap) (
 				framed.NewUnicode(
 					list.New(list.NewSimpleListWalker(menu1Widgets2)),
 				),
-				gowid.MakePaletteRef("default"),
+				gowid.MakePaletteRef("menu"),
 			),
 		),
 		keypress.Options{
