@@ -2296,13 +2296,7 @@ func createProgressWidget() (*button.Widget, *columns.Widget) {
 	stop := button.New(text.New("Stop"))
 	stop2 := styled.NewExt(stop, gowid.MakePaletteRef("button"), gowid.MakePaletteRef("button-focus"))
 
-	prog := vpadding.New(progressHolder, gowid.VAlignTop{}, flow)
 	prog2 := columns.New([]gowid.IContainerWidget{
-		&gowid.ContainerWidget{
-			IWidget: prog,
-			D:       weight(1),
-		},
-		colSpace,
 		&gowid.ContainerWidget{
 			IWidget: stop2,
 			D:       fixed,
