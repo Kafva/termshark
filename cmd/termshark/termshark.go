@@ -156,6 +156,7 @@ func cmain() int {
 	if err != nil {
 		fmt.Fprintf(os.Stderr, fmt.Sprintf("%s\n", err.Error()))
 	}
+    profiles.SetConf("main.disable-shark-fin", true)
 
 	// Used to determine if we should run tshark instead e.g. stdout is not a tty
 	var tsopts cli.Tshark
